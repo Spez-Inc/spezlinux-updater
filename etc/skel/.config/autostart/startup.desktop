@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=bash /usr/share/spezlinuxupdater/startup
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Spez Linux Updater
+Name=Spez Linux Updater
+Comment[en_US]=
+Comment=

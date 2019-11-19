@@ -1,0 +1,10 @@
+er="$(lsb_release -rs)" 
+erint=$(echo "${er//./}")
+wget "https://sourceforge.net/projects/spez-linux/files/updater/versionupdate/download?source=typ_redirect" -O /home/$USER/version
+ver="$(cat /home/$USER/version)"
+verint=$(echo "${ver//./}")
+if [ $erint -lt $verint ];
+then
+ sleep 15
+ notify-send "New System Update" "Spez Linux $ver now available. Please open Spez Linux Updater to make the update" --icon=system-software-update
+fi
